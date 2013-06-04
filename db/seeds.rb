@@ -1,4 +1,4 @@
 File.open("app/words.txt").each do |line|
   word = line.strip
-  Word.create(word) unless word.nil?
+  Word.create(word: word) unless word.empty?
 end
